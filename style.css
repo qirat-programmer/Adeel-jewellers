@@ -781,7 +781,7 @@ footer .logo {
 
 }
 
-. logo { 
+.logo { 
     font-family: Georgia, serif;
     font-size: 24px;
     font-weight: 3px;
@@ -824,4 +824,85 @@ footer .logo {
 
 .shop-btn:hover {
     background: #ffffff;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero {
+        width: 100%;
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-content {
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .shop-btn {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+
+    /* Product sections */
+
+    .products,
+    .collection,
+    .featured {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .product-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .product-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Navigation */
+
+    nav {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav-container {
+        width: 100%;
+        padding: 12px 15px;
+        box-sizing: border-box;
+    }
 }
