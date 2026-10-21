@@ -906,3 +906,52 @@ footer .logo {
         box-sizing: border-box;
     }
 }
+
+@media (max-width: 768px) {
+    html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .hero,
+    .featured,
+    .collection,
+    .about,
+    .contact,
+    main,
+    header,
+    footer {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-content {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .product-grid {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .product-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
